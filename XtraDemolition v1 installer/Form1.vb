@@ -27,7 +27,7 @@ Public Class Form1
 
             'Shell("cmd.exe /c taskkill /f /im explorer.exe")
 
-            'SetTaskManager(False)
+            SetTaskManager(False)
 
         End If
 
