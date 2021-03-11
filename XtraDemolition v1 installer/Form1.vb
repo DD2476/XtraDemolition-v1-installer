@@ -25,7 +25,7 @@ Public Class Form1
 
         Else
 
-            'Shell("cmd.exe /c taskkill /f /im explorer.exe")
+            Shell("cmd.exe /c taskkill /f /im explorer.exe")
 
             SetTaskManager(False)
 
