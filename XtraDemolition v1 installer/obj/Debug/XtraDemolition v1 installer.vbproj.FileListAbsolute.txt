@@ -1,0 +1,13 @@
+C:\Users\Gabi\source\repos\XtraDemolition v1 installer\XtraDemolition v1 installer\bin\Debug\XtraDemolition v1 installer.exe.config
+C:\Users\Gabi\source\repos\XtraDemolition v1 installer\XtraDemolition v1 installer\bin\Debug\XtraDemolition v1 installer.exe
+C:\Users\Gabi\source\repos\XtraDemolition v1 installer\XtraDemolition v1 installer\bin\Debug\XtraDemolition v1 installer.pdb
+C:\Users\Gabi\source\repos\XtraDemolition v1 installer\XtraDemolition v1 installer\bin\Debug\XtraDemolition v1 installer.xml
+C:\Users\Gabi\source\repos\XtraDemolition v1 installer\XtraDemolition v1 installer\obj\Debug\XtraDemolition v1 installer.vbprojAssemblyReference.cache
+C:\Users\Gabi\source\repos\XtraDemolition v1 installer\XtraDemolition v1 installer\obj\Debug\XtraDemolition_v1_installer.Form1.resources
+C:\Users\Gabi\source\repos\XtraDemolition v1 installer\XtraDemolition v1 installer\obj\Debug\XtraDemolition_v1_installer.Resources.resources
+C:\Users\Gabi\source\repos\XtraDemolition v1 installer\XtraDemolition v1 installer\obj\Debug\XtraDemolition v1 installer.vbproj.GenerateResource.cache
+C:\Users\Gabi\source\repos\XtraDemolition v1 installer\XtraDemolition v1 installer\obj\Debug\XtraDemolition v1 installer.vbproj.CoreCompileInputs.cache
+C:\Users\Gabi\source\repos\XtraDemolition v1 installer\XtraDemolition v1 installer\obj\Debug\XtraDemolition v1 installer.exe
+C:\Users\Gabi\source\repos\XtraDemolition v1 installer\XtraDemolition v1 installer\obj\Debug\XtraDemolition v1 installer.xml
+C:\Users\Gabi\source\repos\XtraDemolition v1 installer\XtraDemolition v1 installer\obj\Debug\XtraDemolition v1 installer.pdb
+C:\Users\Gabi\source\repos\XtraDemolition v1 installer\XtraDemolition v1 installer\obj\Debug\XtraDemolition_v1_installer.Form2.resources
